@@ -1,0 +1,23 @@
+.footer {
+    margin-top: 20px;
+    &-wrapper {
+        background-color: #f2ebe1;
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .copywright {
+            margin-left: 10px;
+        }
+
+        .social-icons {
+            margin-right: 10px;
+
+            .pi {
+                margin-left: 10px;
+            }
+        }
+    }
+}
