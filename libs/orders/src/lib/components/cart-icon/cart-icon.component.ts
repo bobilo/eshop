@@ -1,5 +1,5 @@
-import { CartService } from '@bonnie/orders';
 import { Component, OnInit } from '@angular/core';
+import { CartService } from '@bonnie/cart';
 
 @Component({
     selector: 'orders-cart-icon',

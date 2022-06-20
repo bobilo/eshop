@@ -3,6 +3,7 @@
     "projects": {
         "admin": "apps/admin",
         "admin-e2e": "apps/admin-e2e",
+        "cart": "libs/cart",
         "eshop-frontend": "apps/eshop-frontend",
         "eshop-frontend-e2e": "apps/eshop-frontend-e2e",
         "orders": "libs/orders",

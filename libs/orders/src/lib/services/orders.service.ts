@@ -3,8 +3,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, switchMap } from 'rxjs';
 import { environment } from '@env/environment';
-import { Order } from '@bonnie/orders';
 import { StripeService } from 'ngx-stripe';
+import { Order } from '../models/Order';
 
 @Injectable({
     providedIn: 'root'

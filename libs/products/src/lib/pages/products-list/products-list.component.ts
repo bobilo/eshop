@@ -2,9 +2,9 @@ import { ActivatedRoute } from '@angular/router';
 import { Category } from './../../models/Category';
 import { CategoriesService } from './../../services/categories.service';
 import { takeUntil, Subject } from 'rxjs';
-import { ProductsService } from '@bonnie/products';
 import { Product } from './../../models/Products';
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { ProductsService } from '../../services/products.service';
 
 @Component({
     selector: 'products-products-list',

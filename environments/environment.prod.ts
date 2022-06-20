@@ -1,4 +1,4 @@
 export const environment = {
     production: true,
-    apiURL: 'http://localhost:5000/api/v1/'
+    apiURL: 'https://eshop-backend-bonnie.herokuapp.com/api/v1/'
 };

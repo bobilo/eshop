@@ -1,10 +1,10 @@
 import { takeUntil, Subject } from 'rxjs';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Category } from '../../models/Category';
-import { CategoriesService } from '@bonnie/products';
+import { CategoriesService } from '../../services/categories.service';
 
 @Component({
-    selector: 'product-categories-banner',
+    selector: 'products-categories-banner',
     templateUrl: './categories-banner.component.html',
     styles: []
 })

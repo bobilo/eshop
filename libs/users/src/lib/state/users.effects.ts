@@ -1,11 +1,10 @@
-import { UsersService } from '@bonnie/users';
 import { LocalstorageService } from './../services/localstorage.service';
 import { Injectable } from '@angular/core';
 import { createEffect, Actions, ofType } from '@ngrx/effects';
-import { fetch } from '@nrwl/angular';
 import { catchError, concatMap, map, of } from 'rxjs';
 
 import * as UsersActions from './users.actions';
+import { UsersService } from '../services/users.service';
 
 @Injectable()
 export class UsersEffects {

@@ -1,4 +1,4 @@
-import { CartService } from './services/cart.service';
+import { CartService } from '../../../cart/src/lib/services/cart.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';

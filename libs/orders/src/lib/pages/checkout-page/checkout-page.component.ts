@@ -1,13 +1,15 @@
 import { Subject, takeUntil } from 'rxjs';
 import { UsersService } from '@bonnie/users';
 // eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
-import { Cart, CartService, OrdersService, ORDER_STATUS } from '@bonnie/orders';
 import { Order } from './../../models/Order';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { OrderItem } from '../../models/OrderItem';
 import * as countriesLib from 'i18n-iso-countries';
+import { OrdersService } from '../../services/orders.service';
+import { ORDER_STATUS } from '../../order.constants';
+import { Cart, CartService } from '@bonnie/cart';
 
 declare const require;
 

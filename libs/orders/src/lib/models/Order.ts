@@ -1,4 +1,3 @@
-import { User } from "@bonnie/users";
 import { OrderItem } from "./OrderItem";
 
 export class Order {

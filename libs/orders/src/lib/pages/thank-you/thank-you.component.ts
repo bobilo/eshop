@@ -1,5 +1,6 @@
-import { OrdersService, CartService } from '@bonnie/orders';
 import { Component, OnInit } from '@angular/core';
+import { CartService } from '@bonnie/cart';
+import { OrdersService } from '../../services/orders.service';
 
 @Component({
     selector: 'orders-thank-you',

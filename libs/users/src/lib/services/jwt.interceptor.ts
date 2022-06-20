@@ -2,7 +2,6 @@ import { LocalstorageService } from './localstorage.service';
 import { Injectable } from '@angular/core';
 import { HttpRequest, HttpHandler, HttpEvent, HttpInterceptor } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { environment } from '@env/environment';
 
 @Injectable()
 export class JwtInterceptor implements HttpInterceptor {
@@ -10,7 +9,7 @@ export class JwtInterceptor implements HttpInterceptor {
 
     intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
         const token = this.localstorageService.getToken();
-        const isAPIUrl = request.url.startsWith(environment.apiURL);
+        const isAPIUrl = request.url.startsWith('https://eshop-backend-bonnie.herokuapp.com/api/v1/');
 
         if (token && isAPIUrl) {
             request = request.clone({

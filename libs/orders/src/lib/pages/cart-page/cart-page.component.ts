@@ -1,10 +1,9 @@
 import { takeUntil, Subject } from 'rxjs';
-import { CartService } from './../../services/cart.service';
 import { Router } from '@angular/router';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ProductsService } from '@bonnie/products';
-import { CartItemDetailed } from '../../models/Cart';
 import { MessageService } from 'primeng/api';
+import { CartItemDetailed, CartService } from '@bonnie/cart';
 
 @Component({
     selector: 'orders-cart-page',

@@ -1,15 +1,14 @@
 import { UsersFacade } from './../state/users.facade';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { User } from '@bonnie/users';
-import { environment } from '@env/environment';
 import { Observable } from 'rxjs';
+import { User } from '../models/User';
 
 @Injectable({
     providedIn: 'root'
 })
 export class UsersService {
-    apiURLUsers = environment.apiURL + 'users';
+    apiURLUsers = 'https://eshop-backend-bonnie.herokuapp.com/api/v1/' + 'users';
 
     constructor(private http: HttpClient, private usersFacade: UsersFacade) {}
 
@@ -33,8 +32,8 @@ export class UsersService {
         return this.http.delete<unknown>(`${this.apiURLUsers}/${userId}`);
     }
 
-    getUsersCount(): Observable<Object> {
-        return this.http.get<Object>(`${this.apiURLUsers}/get/count`);
+    getUsersCount(): Observable<unknown> {
+        return this.http.get<unknown>(`${this.apiURLUsers}/get/count`);
     }
 
     initAppSession() {

@@ -15,6 +15,7 @@
         "skipDefaultLibCheck": true,
         "baseUrl": ".",
         "paths": {
+            "@bonnie/cart": ["libs/cart/src/index.ts"],
             "@bonnie/orders": ["libs/orders/src/index.ts"],
             "@bonnie/products": ["libs/products/src/index.ts"],
             "@bonnie/ui": ["libs/ui/src/index.ts"],

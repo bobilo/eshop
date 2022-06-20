@@ -1,7 +1,7 @@
 import { Product } from './../../models/Products';
 import { Component, Input, OnInit } from '@angular/core';
-import { CartItem, CartService } from '@bonnie/orders';
 import { MessageService } from 'primeng/api';
+import { CartItem, CartService } from '@bonnie/cart';
 
 @Component({
     selector: 'products-product-item',

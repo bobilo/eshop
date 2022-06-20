@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
-import { CartService } from '@bonnie/orders';
+import { CartService } from '@bonnie/cart';
 import { ProductsService } from '@bonnie/products';
 import { Subject, take, takeUntil } from 'rxjs';
 

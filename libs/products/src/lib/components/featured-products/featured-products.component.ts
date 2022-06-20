@@ -1,7 +1,7 @@
 import { takeUntil, Subject } from 'rxjs';
-import { ProductsService } from '@bonnie/products';
 import { Product } from './../../models/Products';
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { ProductsService } from '../../services/products.service';
 
 @Component({
     selector: 'products-featured-products',
